@@ -1,0 +1,42 @@
+{
+    "name": "quotes/valueobjects",
+    "description": "Value objects library",
+    "type": "library",
+    "require": {
+        "php": ">=7.1",
+        "ext-libsodium": "*",
+        "ext-uopz": "*",
+        "beberlei/assert": "^2.7",
+        "marc-mabe/php-enum": "^2.3",
+        "moontoast/math": "^1.1",
+        "ramsey/uuid": "^3.7",
+        "roave/security-advisories": "dev-master",
+        "tightenco/collect": "^5.5"
+    },
+    "require-dev": {
+        "phpunit/php-invoker": "^1.1",
+        "phpunit/phpunit": "^6.4"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mark Badolato",
+            "email": "mbadolato@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PhpValueObjects\\ValueObjects\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PhpValueObjects\\ValueObjects\\Test\\": "tests"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}
