@@ -8,7 +8,7 @@
 
 declare(strict_types = 1);
 
-namespace PhpValueObjects\Tests\SharedKernel\Model\Primitive;
+namespace PhpValueObjects\ValueObjects\Test\ValueObjects\Primitive;
 
 use PHPUnit\Framework\TestCase;
 use PhpValueObjects\ValueObjects\Test\Resources\TestEnum1;

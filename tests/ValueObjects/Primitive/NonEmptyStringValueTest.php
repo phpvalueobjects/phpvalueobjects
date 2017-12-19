@@ -8,7 +8,7 @@
 
 declare(strict_types = 1);
 
-namespace PhpValueObjects\ValueObjects\Test\ValueObjects\Identity;
+namespace PhpValueObjects\ValueObjects\Test\ValueObjects\Primitive;
 
 use Assert\InvalidArgumentException;
 use PHPUnit\Framework\TestCase;

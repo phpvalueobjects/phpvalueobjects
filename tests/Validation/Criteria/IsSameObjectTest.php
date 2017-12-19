@@ -43,18 +43,4 @@ class IsSameObjectTest extends TestCase
 
         self::assertTrue($criteria->isSatisfied());
     }
-
-    /**
-     * @test
-     */
-    public function it_throws_an_error_when_comparing_objects_that_do_not_implement_value_object_interface() : void
-    {
-        $this->expectException(\TypeError::class);
-
-        $object1  = new \stdClass();
-        $object2  = new \stdClass();
-        $criteria = new IsSameObject($object1, $object2);
-
-        self::assertFalse($criteria->isSatisfied());
-    }
 }
