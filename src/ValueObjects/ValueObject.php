@@ -1,7 +1,7 @@
 <?php
 
 /**
- * This file is part of the valueobjects package
+ * This file is part of the phpvalueobjects package
  *
  * Copyright (c) 2017 Mark Badolato <mbadolato@gmail.com>. All rights reserved.
  */
@@ -36,4 +36,3 @@ interface ValueObject
      */
     public function toNative();
 }
-
