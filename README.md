@@ -22,10 +22,10 @@ Some objects, like `Uuid`, can also be instantiated without a parameter, and wil
 
 ```php
 # Will generate an object with a new uuid v4 value for you
-$uuid = new Uuid();
+$uuid = new Uuid4();
 
 # Will generate an object with the value `2877d189-f3b8-4386-8588-6841715ec27a`
-$uuid = new Uuid('2877d189-f3b8-4386-8588-6841715ec27a');
+$uuid = new Uuid4('2877d189-f3b8-4386-8588-6841715ec27a');
 ```
 
 ## Creating your own Value Objects
