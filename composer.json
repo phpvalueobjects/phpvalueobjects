@@ -13,7 +13,7 @@
     "require-dev": {
         "phpstan/phpstan": "^0.9.1",
         "phpunit/php-invoker": "^1.1",
-        "phpunit/phpunit": "^6.4"
+        "phpunit/phpunit": "^7.0"
     },
     "license": "MIT",
     "authors": [
