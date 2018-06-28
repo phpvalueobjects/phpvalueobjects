@@ -14,9 +14,10 @@ use MabeEnum\Enum as EnumLibrary;
 use PhpValueObjects\ValueObjects\Validation\Criteria\IsSameClass;
 use PhpValueObjects\ValueObjects\Validation\Criteria\IsSameScalarValue;
 use PhpValueObjects\ValueObjects\Validation\ValueObjectValidator;
+use PhpValueObjects\ValueObjects\ValueObjects\NativableValueObject;
 use PhpValueObjects\ValueObjects\ValueObjects\ValueObject;
 
-abstract class Enum extends EnumLibrary implements ValueObject
+abstract class Enum extends EnumLibrary implements NativableValueObject
 {
     public function __toString() : string
     {

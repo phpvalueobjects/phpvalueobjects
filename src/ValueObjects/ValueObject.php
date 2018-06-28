@@ -25,14 +25,4 @@ interface ValueObject
      * @return bool
      */
     public function isSameAs(ValueObject $object) : bool;
-
-    /**
-     * Returns the object back as its native argument(s)
-     *
-     * If a value object's constructor consists of multiple arguments, the toNative() method
-     * shall return an array of the original arguments, in the original constructor order
-     *
-     * @return mixed
-     */
-    public function toNative();
 }

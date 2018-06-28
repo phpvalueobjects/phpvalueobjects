@@ -13,9 +13,10 @@ namespace PhpValueObjects\ValueObjects\ValueObjects\Primitive;
 use PhpValueObjects\ValueObjects\Validation\Criteria\IsSameClass;
 use PhpValueObjects\ValueObjects\Validation\Criteria\IsSameScalarValue;
 use PhpValueObjects\ValueObjects\Validation\ValueObjectValidator;
+use PhpValueObjects\ValueObjects\ValueObjects\NativableValueObject;
 use PhpValueObjects\ValueObjects\ValueObjects\ValueObject;
 
-class StringValue implements ValueObject
+class StringValue implements NativableValueObject
 {
     private $value;
 

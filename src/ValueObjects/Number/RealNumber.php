@@ -13,9 +13,10 @@ namespace PhpValueObjects\ValueObjects\ValueObjects\Number;
 use PhpValueObjects\ValueObjects\Validation\Criteria\IsSameClass;
 use PhpValueObjects\ValueObjects\Validation\Criteria\IsSameFloatValue;
 use PhpValueObjects\ValueObjects\Validation\ValueObjectValidator;
+use PhpValueObjects\ValueObjects\ValueObjects\NativableValueObject;
 use PhpValueObjects\ValueObjects\ValueObjects\ValueObject;
 
-class RealNumber implements ValueObject
+class RealNumber implements NativableValueObject
 {
     protected $value;
 

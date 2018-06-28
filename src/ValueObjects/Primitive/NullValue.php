@@ -12,9 +12,10 @@ namespace PhpValueObjects\ValueObjects\ValueObjects\Primitive;
 
 use PhpValueObjects\ValueObjects\Validation\Criteria\IsSameClass;
 use PhpValueObjects\ValueObjects\Validation\ValueObjectValidator;
+use PhpValueObjects\ValueObjects\ValueObjects\NativableValueObject;
 use PhpValueObjects\ValueObjects\ValueObjects\ValueObject;
 
-class NullValue implements ValueObject
+class NullValue implements NativableValueObject
 {
     public function __toString() : string
     {
