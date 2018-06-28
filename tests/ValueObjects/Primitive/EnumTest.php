@@ -22,7 +22,7 @@ class EnumTest extends TestCase
     /**
      * @test
      */
-    public function it_can_provide_its_native_value()
+    public function it_can_provide_its_native_value() : void
     {
         $object = TestEnum1::get(TestEnum1::TEST_VALUE_1);
 
@@ -32,7 +32,7 @@ class EnumTest extends TestCase
     /**
      * @test
      */
-    public function it_casts_the_object_to_a_string()
+    public function it_casts_the_object_to_a_string() : void
     {
         $object = TestEnum1::get(TestEnum1::TEST_VALUE_1);
 
@@ -42,7 +42,7 @@ class EnumTest extends TestCase
     /**
      * @test
      */
-    public function two_objects_from_the_same_class_with_the_same_value_are_the_same()
+    public function two_objects_from_the_same_class_with_the_same_value_are_the_same() : void
     {
         $object1 = TestEnum1::get(TestEnum1::TEST_VALUE_1);
         $object2 = TestEnum1::get(TestEnum1::TEST_VALUE_1);
@@ -54,7 +54,7 @@ class EnumTest extends TestCase
     /**
      * @test
      */
-    public function two_objects_from_the_same_class_with_the_different_values_are_not_the_same()
+    public function two_objects_from_the_same_class_with_the_different_values_are_not_the_same() : void
     {
         $object1 = TestEnum1::get(TestEnum1::TEST_VALUE_1);
         $object2 = TestEnum1::get(TestEnum1::TEST_VALUE_2);
@@ -66,7 +66,7 @@ class EnumTest extends TestCase
     /**
      * @test
      */
-    public function two_objects_from_different_classes_with_the_same_value_are_not_the_same()
+    public function two_objects_from_different_classes_with_the_same_value_are_not_the_same() : void
     {
         $object1 = TestEnum1::get(TestEnum1::TEST_VALUE_1);
         $object2 = TestEnum2::get(TestEnum1::TEST_VALUE_1);

@@ -12,10 +12,7 @@ namespace PhpValueObjects\ValueObjects\Test\ValueObjects\Primitive;
 
 use PHPUnit\Framework\TestCase;
 use PhpValueObjects\ValueObjects\Test\Resources\TestNull1;
-use PhpValueObjects\ValueObjects\Test\Resources\TestString1;
-use PhpValueObjects\ValueObjects\Test\Resources\TestString2;
 use PhpValueObjects\ValueObjects\ValueObjects\Primitive\NullValue;
-use PhpValueObjects\ValueObjects\ValueObjects\Primitive\StringValue;
 
 /**
  * @covers \PhpValueObjects\ValueObjects\ValueObjects\Primitive\NullValue

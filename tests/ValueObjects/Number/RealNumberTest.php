@@ -25,7 +25,7 @@ class RealNumberTest extends TestCase
     /**
      * @test
      */
-    public function it_casts_the_object_to_a_string()
+    public function it_casts_the_object_to_a_string() : void
     {
         self::assertEquals(
             (string) self::TEST_FLOAT_VALUE,
@@ -36,7 +36,7 @@ class RealNumberTest extends TestCase
     /**
      * @test
      */
-    public function it_converts_to_an_integer_value_object()
+    public function it_converts_to_an_integer_value_object() : void
     {
         $object    = new RealNumber(self::TEST_FLOAT_VALUE);
         $asInteger = $object->toIntegerValue();
@@ -47,7 +47,7 @@ class RealNumberTest extends TestCase
     /**
      * @test
      */
-    public function it_creates_the_object_when_value_is_a_float()
+    public function it_creates_the_object_when_value_is_a_float() : void
     {
         $object = new RealNumber(self::TEST_FLOAT_VALUE);
 
@@ -58,7 +58,7 @@ class RealNumberTest extends TestCase
     /**
      * @test
      */
-    public function it_creates_the_object_when_value_is_an_int()
+    public function it_creates_the_object_when_value_is_an_int() : void
     {
         $object = new RealNumber(self::TEST_INT_VALUE);
 
@@ -102,7 +102,7 @@ class RealNumberTest extends TestCase
         self::assertFalse($object2->isSameAs($object1));
     }
 
-    private static function assertFloatEquals(float $expected, float $actual)
+    private static function assertFloatEquals(float $expected, float $actual) : void
     {
         self::assertEquals($expected, $actual, '', 0.000001);
     }

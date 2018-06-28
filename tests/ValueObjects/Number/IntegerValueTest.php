@@ -19,13 +19,12 @@ use PhpValueObjects\ValueObjects\ValueObjects\Number\RealNumber;
  */
 class IntegerValueTest extends TestCase
 {
-    private const TEST_FLOAT_VALUE = 1.23456;
-    private const TEST_INT_VALUE   = 42;
+    private const TEST_INT_VALUE = 42;
 
     /**
      * @test
      */
-    public function it_casts_the_object_to_a_string()
+    public function it_casts_the_object_to_a_string() : void
     {
         self::assertEquals(
             (string) self::TEST_INT_VALUE,
@@ -36,7 +35,7 @@ class IntegerValueTest extends TestCase
     /**
      * @test
      */
-    public function it_converts_to_a_real_value_object()
+    public function it_converts_to_a_real_value_object() : void
     {
         $object = new IntegerValue(self::TEST_INT_VALUE);
         $asReal = $object->toRealNumber();
@@ -47,7 +46,7 @@ class IntegerValueTest extends TestCase
     /**
      * @test
      */
-    public function it_creates_the_object_when_value_is_an_int()
+    public function it_creates_the_object_when_value_is_an_int() : void
     {
         $object = new IntegerValue(self::TEST_INT_VALUE);
 
