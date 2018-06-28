@@ -10,35 +10,8 @@ declare(strict_types = 1);
 
 namespace PhpValueObjects\ValueObjects\Test\Resources;
 
-use PhpValueObjects\ValueObjects\Validation\Criteria\IsSameClass;
-use PhpValueObjects\ValueObjects\Validation\Criteria\IsSameScalarValue;
-use PhpValueObjects\ValueObjects\Validation\ValueObjectValidator;
-use PhpValueObjects\ValueObjects\ValueObjects\ValueObject;
+use PhpValueObjects\ValueObjects\ValueObjects\Primitive\StringValue;
 
-final class TestString1 implements ValueObject
+final class TestString1 extends StringValue
 {
-    private $value;
-
-    public function __construct(string $value)
-    {
-        $this->value = $value;
-    }
-
-    public function __toString() : string
-    {
-        return $this->toNative();
-    }
-
-    public function isSameAs(ValueObject $object) : bool
-    {
-        return ValueObjectValidator::matchesSpecification(
-            new IsSameClass($this, $object),
-            new IsSameScalarValue($this, $object)
-        );
-    }
-
-    public function toNative() : string
-    {
-        return $this->value;
-    }
 }
