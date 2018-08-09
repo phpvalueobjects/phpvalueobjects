@@ -20,6 +20,11 @@ class RealNumber implements NativableValueObject
 {
     protected $value;
 
+    public static function fromNative($value) : NativableValueObject
+    {
+        return new static($value);
+    }
+
     public function __construct(float $value)
     {
         $this->value = $value;

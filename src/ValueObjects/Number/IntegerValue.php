@@ -20,6 +20,11 @@ class IntegerValue implements NativableValueObject
 {
     protected $value;
 
+    public static function fromNative($value) : NativableValueObject
+    {
+        return new static($value);
+    }
+
     public function __construct(int $value)
     {
         $this->value = $value;

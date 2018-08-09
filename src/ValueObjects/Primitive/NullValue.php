@@ -17,6 +17,11 @@ use PhpValueObjects\ValueObjects\ValueObjects\ValueObject;
 
 class NullValue implements NativableValueObject
 {
+    public static function fromNative($value) : NativableValueObject
+    {
+        return new static();
+    }
+
     public function __toString() : string
     {
         return (string) null;

@@ -19,6 +19,11 @@ use PhpValueObjects\ValueObjects\ValueObjects\ValueObject;
 
 abstract class Enum extends EnumLibrary implements NativableValueObject
 {
+    public static function fromNative($value) : NativableValueObject
+    {
+        return static::get($value);
+    }
+
     public function __toString() : string
     {
         return (string) $this->toNative();

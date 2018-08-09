@@ -32,6 +32,16 @@ class EnumTest extends TestCase
     /**
      * @test
      */
+    public function it_can_instantiate_from_a_native_value() : void
+    {
+        $object = TestEnum1::fromNative(TestEnum1::TEST_VALUE_1);
+
+        self::assertEquals(TestEnum1::TEST_VALUE_1, $object->toNative());
+    }
+
+    /**
+     * @test
+     */
     public function it_casts_the_object_to_a_string() : void
     {
         $object = TestEnum1::get(TestEnum1::TEST_VALUE_1);

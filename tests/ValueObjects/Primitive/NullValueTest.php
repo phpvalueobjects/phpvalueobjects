@@ -32,6 +32,16 @@ class NullValueTest extends TestCase
     /**
      * @test
      */
+    public function it_converts_native_null_value_to_null_value_object() : void
+    {
+        $object = NullValue::fromNative(null);
+
+        self::assertNull($object->toNative());
+    }
+
+    /**
+     * @test
+     */
     public function it_converts_null_value_object_to_native_null() : void
     {
         $object = new NullValue();

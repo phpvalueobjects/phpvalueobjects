@@ -57,6 +57,26 @@ class IntegerValueTest extends TestCase
     /**
      * @test
      */
+    public function it_creates_the_object_from_a_native_int() : void
+    {
+        $object = IntegerValue::fromNative(self::TEST_INT_VALUE);
+
+        self::assertEquals(self::TEST_INT_VALUE, $object->toNative());
+    }
+
+    /**
+     * @test
+     */
+    public function it_does_not_create_the_object_from_a_native_value_other_than_an_int() : void
+    {
+        $this->expectException(\TypeError::class);
+
+        RealNumber::fromNative(true);
+    }
+
+    /**
+     * @test
+     */
     public function two_value_objects_of_same_types_with_the_same_value_are_considered_the_same() : void
     {
         $object1 = new IntegerValue(self::TEST_INT_VALUE);

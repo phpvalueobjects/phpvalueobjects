@@ -57,6 +57,26 @@ class StringValueTest extends TestCase
     /**
      * @test
      */
+    public function it_creates_string_value_object_from_a_native_string_value() : void
+    {
+        $object = StringValue::fromNative('Test');
+
+        self::assertEquals('Test', $object);
+    }
+
+    /**
+     * @test
+     */
+    public function it_does_not_create_a_string_value_object_from_a_native_value_other_than_a_string() : void
+    {
+        $this->expectException(\TypeError::class);
+
+        StringValue::fromNative(false);
+    }
+
+    /**
+     * @test
+     */
     public function it_creates_string_value_object_when_an_empty_string_is_passed_in() : void
     {
         $object = new StringValue('');

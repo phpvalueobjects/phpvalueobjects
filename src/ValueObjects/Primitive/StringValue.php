@@ -20,6 +20,11 @@ class StringValue implements NativableValueObject
 {
     private $value;
 
+    public static function fromNative($value) : NativableValueObject
+    {
+        return new static($value);
+    }
+
     public function __construct(string $value)
     {
         $this->value = trim($value);

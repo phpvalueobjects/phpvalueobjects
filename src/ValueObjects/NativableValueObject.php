@@ -13,7 +13,14 @@ namespace PhpValueObjects\ValueObjects\ValueObjects;
 interface NativableValueObject extends ValueObject
 {
     /**
-     * Returns the object back as its native argument(s)
+     * @param mixed $value The native (primitive) value from which to create object from
+     *
+     * @return self
+     */
+    public static function fromNative($value) : self;
+
+    /**
+     * Returns the object back as its native primitive value
      *
      * @return mixed
      */

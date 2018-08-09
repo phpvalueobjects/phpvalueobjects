@@ -58,6 +58,26 @@ class RealNumberTest extends TestCase
     /**
      * @test
      */
+    public function it_creates_the_object_from_a_native_float() : void
+    {
+        $object = RealNumber::fromNative(self::TEST_FLOAT_VALUE);
+
+        self::assertFloatEquals(self::TEST_FLOAT_VALUE, $object->toNative());
+    }
+
+    /**
+     * @test
+     */
+    public function it_does_not_create_the_object_from_a_native_value_other_than_a_float() : void
+    {
+        $this->expectException(\TypeError::class);
+
+        RealNumber::fromNative(true);
+    }
+
+    /**
+     * @test
+     */
     public function it_creates_the_object_when_value_is_an_int() : void
     {
         $object = new RealNumber(self::TEST_INT_VALUE);

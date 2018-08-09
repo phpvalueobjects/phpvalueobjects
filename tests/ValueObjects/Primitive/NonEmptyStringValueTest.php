@@ -37,4 +37,13 @@ class NonEmptyStringValueTest extends TestCase
         $this->expectException(InvalidArgumentException::class);
         new NonEmptyStringValue('');
     }
+
+    /**
+     * @test
+     */
+    public function it_does_not_allow_empty_strings_as_native_string_value() : void
+    {
+        $this->expectException(InvalidArgumentException::class);
+        NonEmptyStringValue::fromNative('');
+    }
 }
