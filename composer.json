@@ -5,14 +5,13 @@
     "require": {
         "php": ">=7.1",
         "beberlei/assert": "^3.0",
-        "marc-mabe/php-enum": "^3.0",
+        "marc-mabe/php-enum": "^4.0",
         "ramsey/uuid": "^3.7",
         "tightenco/collect": "^5.5"
     },
     "require-dev": {
-        "phpstan/phpstan": "^0.9.1",
-        "phpunit/php-invoker": "^1.1",
-        "phpunit/phpunit": "^7.0",
+        "nunomaduro/phpinsights": "^1.0",
+        "phpunit/phpunit": "^8.0",
         "roave/security-advisories": "dev-master"
     },
     "license": "MIT",
