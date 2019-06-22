@@ -124,6 +124,6 @@ class RealNumberTest extends TestCase
 
     private static function assertFloatEquals(float $expected, float $actual) : void
     {
-        self::assertEquals($expected, $actual, '', 0.000001);
+        self::assertEqualsWithDelta($expected, $actual, 0.000001);
     }
 }
