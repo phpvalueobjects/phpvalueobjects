@@ -7,7 +7,7 @@
         "beberlei/assert": "^3.0",
         "marc-mabe/php-enum": "^4.0",
         "ramsey/uuid": "^3.7",
-        "tightenco/collect": "^5.5"
+        "tightenco/collect": "^6.0"
     },
     "require-dev": {
         "phpunit/phpunit": "^8.0",
